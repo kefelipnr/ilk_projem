@@ -470,15 +470,11 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   };
   attributes: {
     author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'>;
-    Baslik: Schema.Attribute.String &
-      Schema.Attribute.Required &
-      Schema.Attribute.Unique;
+    Baslik: Schema.Attribute.String & Schema.Attribute.Unique;
     category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Durum: Schema.Attribute.Enumeration<['Draft ', 'Published ', 'Archive']> &
-      Schema.Attribute.Required;
     Icerik: Schema.Attribute.RichText;
     KapakResmi: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
