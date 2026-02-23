@@ -40,6 +40,12 @@
       "relation": "manyToOne",
       "target": "api::author.author",
       "inversedBy": "articles"
+    },
+    "Govde_Bilesenleri": {
+      "type": "dynamiczone",
+      "components": [
+        "blog-parcalari.slogan"
+      ]
     }
   }
 }
