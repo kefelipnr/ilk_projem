@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blog_parcalari_slogans",
+  "info": {
+    "displayName": "Slogan",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "Metin": {
+      "type": "text"
+    },
+    "Yazar": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
